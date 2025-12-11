@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+                      <!-- FORM     -->
+    <form id="form" >
+        <h1>Form Registration</h1>
+        <div>
+            <label>Full name</label>
+            <input type="text" name="name" placeholder="Enter Full name" required  id="name" pattern="[A-Za-z ]{3,}"
+                title="Name should contain only letters and spaces, 3 to more characters." />
+                <br/><br/>
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Enter Email" required id="email"
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"  title="Enter a valid email address " />
+
+                          
+            <label>password</label>
+            <input type="password" name="password" placeholder="Enter password" required id="password"
+                pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{6,}"
+                title="Password must be at least 6 characters, include upper/lowercase letters, a number and a special symbol." />
+                     
+            <label>Phone Number</label>
+            <input type="text" name="phone" placeholder="Enter Phone Number" required id="phono" pattern="[0-9]{10}"
+                title="Phone number must be exactly 10 digits." />
+                      
+            <label>Date of Birth</label>
+            <input type="date" name="dob" required  id="dob" max="2009-12-31" title="You must be at least 18 years old." />
+</div>
+
+        <div>
+            <h3>Select Gender</h3>
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="gender" value="female"  />Female
+            <input type="radio" name="gender" value="other"/>Other
+        </div>
+        <div>
+            <h3>Select courses</h3>
+            <input type="checkbox" name="skills" value="html" id="html"/> HTML
+            <input type="checkbox" name="skills" value="css"  id="css"/>CSS
+            <input type="checkbox" name="skills" value="js" id="js" />JavaScript
+            <input type="checkbox" name="skills" value="react" id="react"/>React
+
+        </div>
+         
+        <button type="submit">Submit</button>
+    </form>
+
+        <!-- FLEX AND GRID -->
+
+        <div class="card">
+  <div class="card_header">Gallery</div>
+
+  <div class="card_body">
+    <div class="section_layout">
+
+      <!-- Flex Section -->
+      <div class="flex-container">
+        <div class="flex_item">
+          <img src="./files/pexels-jonaskakaroto-736230.jpg" alt="">
+        </div>
+        <div class="flex_item">
+          <img src="./files/pexels-jonaskakaroto-736230.jpg" alt="">
+        </div>
+        <div class="flex_item">
+          <img src="./files/pexels-jonaskakaroto-736230.jpg" alt="">
+        </div>
+        <div class="flex_item">
+          <img src="./files/pexels-jonaskakaroto-736230.jpg" alt="">
+        </div>
+        <div class="flex_item">
+          <img src="./files/pexels-jonaskakaroto-736230.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Grid Section -->
+      <div class="grid_container">
+        <div class="grid_items">
+          <img src="./files/pexels-jonaskakaroto-736230.jpg" alt="">
+        </div>
+        <div class="grid_items">
+          <img src="./files/pexels-jonaskakaroto-736230.jpg" alt="">
+        </div>
+        <div class="grid_items">
+          <img src="./files/pexels-jonaskakaroto-736230.jpg" alt="">
+        </div>
+        <div class="grid_items">
+          <img src="./files/pexels-jonaskakaroto-736230.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<h1>CSS GRID</h1>
+
+<div class="grid">
+    <div class="box green box1"></div>
+    <div class="box green box2"></div>
+    <div class="box red box3"></div>
+
+    <div class="box yellow box4"></div>
+    <div class="box red box5"></div>
+
+    <div class="box red box6"></div>
+  
+    <div class="box green box8"></div>
+</div>
+
+<!-- Z-Index -->
+<div class="zindex-demo">
+  <img src="./files/pexels-jonaskakaroto-736230.jpg" alt="Background Image" class="bg-image">
+  <div class="overlay-text">This text is on top using z-index!</div>
+</div>
+
+<!-- iframe -->
+                    <div class="iframe_section">
+                        <h3>Embedded Website</h3>
+<iframe
+  id="inlineFrameExample"
+  title="Inline Frame Example"
+  width="300"
+  height="200"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&amp;layer=mapnik">
+</iframe>
+</div>
+
+                    <!-- Audio & Video -->
+  <div class="media-section">
+    <h3>Audio & Video Player</h3>
+
+    <audio id="audioPlayer" controls>
+      <source src="./files/Song.mp3" type="audio/mp3" />
+      Your browser does not support audio.
+    </audio>
+
+    <video id="videoPlayer" controls width="400">
+      <source src="./files/video.mp4" type="video/mp4" />
+      Your browser does not support video.
+    </video>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
