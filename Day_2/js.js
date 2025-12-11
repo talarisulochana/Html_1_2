@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (value === "AC") {
 
-                if (confirm("[BOM Alert] Confirm to clear result?")) {
+                if (confirm("Confirm to clear result?")) {
                     display.textContent = "0";
                     shouldClear = true;
                 }
